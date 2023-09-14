@@ -1,10 +1,21 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterSlice from './slices/counterSlice'
+import workspaceSlice from './slices/workspaceSlice'
+import videoSlice from './slices/videoSlice'
+import youtubeVideo from './slices/youtubeVideo'
+import chatSlice from './slices/chatSlice'
+import channelSlice from './slices/channelSlice'
 
 export const store = configureStore({
   reducer: {
-    counterSlice,
+    workspaceSlice,
+    videoSlice,
+    youtubeVideo,
+    chatSlice,
+    channelSlice,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+    serializableCheck: false
+  })
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
