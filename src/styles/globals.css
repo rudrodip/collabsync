@@ -158,63 +158,19 @@
   background: linear-gradient(to bottom right, transparent 0%, transparent 50%, hsl(var(--primary)) 50%, hsl(var(--primary)) 100%);
 }
 
-
-#cards:hover > .card::after {
-  opacity: 1;
+*::-webkit-scrollbar{
+  width: 0.25rem;
 }
 
-.card {
-  background-color: hsl(var(--secondary));
-  border-radius: var(--radius);
-  cursor: pointer;
-  position: relative;
+*::-webkit-scrollbar-track{
+  background: transparent;
+  margin-block: 0.5rem;
+  border-radius: 100vw;
 }
 
-.card:hover::before {
-  opacity: 1;
-}
-
-.card::before,
-.card::after {
-  border-radius: inherit;
-  content: "";
-  height: 100%;
-  left: 0px;
-  opacity: 0;
-  position: absolute;
-  top: 0px;
-  transition: opacity 500ms;
-  width: 100%;
-}
-
-.card::before {
-  background: radial-gradient(
-    800px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(255, 255, 255, 0.06),
-    transparent 40%
-  );
-  z-index: 3;
-}
-
-.card::after {  
-  background: radial-gradient(
-    600px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(255, 255, 255, 0.4),
-    transparent 40%
-  );
-  z-index: 1;
-}
-
-.card > .card-content {
-  background-color: var(--card-color);
-  border-radius: inherit;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  inset: 1px;
-  padding: 10px;
-  position: absolute;
-  z-index: 2;
+*::-webkit-scrollbar-thumb{
+  background: hsl(var(--accent));
+  border-radius: 25vw;
 }
 
 /* Tailwind Styles */
