@@ -1,19 +1,16 @@
-import { notFound } from "next/navigation"
-
+import { WorkspaceGallery } from "@/components/workspace/workspace-gallery"
 import { getCurrentUser } from "@/lib/session"
-import { workspace } from "@/types/db"
-import { WorkSpaceCard } from "@/components/workspace/workspace-card"
+import { notFound } from "next/navigation"
 
 export default async function Dashboard() {
   const user = await getCurrentUser()
-
-  if (!user) {
-    return notFound()
+  
+  if (!user){
+    notFound()
   }
-
   return (
     <main className="">
-      oops
+      <WorkspaceGallery userId={user.id} />
     </main>
   )
 }
