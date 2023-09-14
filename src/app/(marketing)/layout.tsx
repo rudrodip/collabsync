@@ -26,7 +26,7 @@ export default async function MarketingLayout({
                 "px-4"
               )}
             >
-              Get Started
+              Workspaces
             </Link>
           </nav>
         </div>
