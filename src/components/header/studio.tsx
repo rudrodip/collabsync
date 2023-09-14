@@ -1,6 +1,6 @@
 "use client";
 
-import { featureConfig } from "@/config/feature";
+import { studioConfig } from "@/config/studio";
 import { Card } from "@nextui-org/react";
 import { LucideIcon } from "lucide-react";
 import { motion } from "framer-motion";
@@ -39,14 +39,11 @@ export const StudioIntegration = () => {
   return (
     <Card className="max-w-7xl flex flex-col items-center mx-auto my-10 lg:my-16 bg-secondary">
       <div className="text-center p-5">
-        <p className="text-sm my-10 lg:my-16">connecting creators to editors</p>
-        <h1 className="font-heading text-5xl my-3">
-          Collaborate Quicky & Safely
+        <h1 className="font-heading text-5xl my-10">
+          Studio Pro
         </h1>
-        <p className="gray_gradient text-lg">
-          CollabSync is the go-to platform for connecting creators and editors,
-          streamlining content creation and fostering collaboration in the
-          digital world
+        <p className="gray_gradient text-lg max-w-3xl">
+          Studio Pro takes the content game to the extreme, providing you the fine tuned AI model for your channel for suggesting video titles, next video topics and way to make your video more engaging.
         </p>
       </div>
       <motion.div
@@ -56,7 +53,7 @@ export const StudioIntegration = () => {
         whileInView="show"
         viewport={{ once: true }}
       >
-        {featureConfig.features.map((feature, index) => {
+        {studioConfig.features.map((feature, index) => {
           return (
             <FeatureCard
               key={index}
