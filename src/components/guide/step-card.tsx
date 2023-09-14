@@ -37,7 +37,7 @@ export const StepCard = ({
       <motion.div className={`${index % 2 === 0 ? "text-left" : "text-right"}`} >
         <p>Step {index}</p>
         <h1 className="font-heading text-lg">{title}</h1>
-        <p className="text-md">{desc}</p>
+        <p className="text-md max-w-xl">{desc}</p>
       </motion.div>
     </motion.div>
   );

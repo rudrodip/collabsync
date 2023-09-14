@@ -39,11 +39,11 @@ export const FeatureOverview = () => {
   return (
     <Card className="max-w-7xl flex flex-col items-center mx-auto my-10 lg:my-16 bg-secondary">
       <div className="text-center p-5">
-        <p className="text-sm my-10 lg:my-16">connecting creators to editors</p>
+        <p className="text-sm my-10 lg:my-10">connecting creators to editors</p>
         <h1 className="font-heading text-5xl my-3">
           Collaborate Quicky & Safely
         </h1>
-        <p className="gray_gradient text-lg">
+        <p className="gray_gradient text-lg max-w-3xl">
           CollabSync is the go-to platform for connecting creators and editors,
           streamlining content creation and fostering collaboration in the
           digital world
@@ -55,6 +55,7 @@ export const FeatureOverview = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
+        id="feature"
       >
         {featureConfig.features.map((feature, index) => {
           return (

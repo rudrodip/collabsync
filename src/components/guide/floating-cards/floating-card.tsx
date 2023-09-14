@@ -57,7 +57,7 @@ export const FloatingCard = ({
         alt="image"
         fill
         sizes="100vw"
-        className="rounded-lg"
+        className="rounded-lg shadow-lg"
       />
       <motion.div
         className="h-3/4 w-4/5 block rounded-lg"
@@ -74,7 +74,7 @@ export const FloatingCard = ({
           alt="image"
           fill
           sizes="100vw"
-          className="rounded-lg"
+          className="rounded-lg shadow-xl"
         />
       </motion.div>
     </motion.div>
