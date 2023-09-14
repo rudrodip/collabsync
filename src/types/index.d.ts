@@ -57,6 +57,17 @@ export type FeaturesConfig = {
   features: FeatureConfig[]
 }
 
+export type PriceConfig = {
+  name: string;
+  description: string;
+  features: string[];
+  price: string;
+};
+
+export type PriceConfigs = {
+  [key: string]: PriceConfig;
+};
+
 type SiteConfig = {
   name: string
   description: string
